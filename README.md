@@ -20,13 +20,10 @@ The attention, MLP, encoder and decoder blocks are all written by hand in `torch
 
 ## Results
 
-Numbers below are printed in the notebooks.
-
 | Model | Dataset | Result |
 |---|---|---|
 | ViT | MNIST | 97.39% accuracy after 5 epochs |
 | MAE | CIFAR-10 | Validation reconstruction loss 0.0382 after 5 epochs |
-| VideoMAE | – | [TODO: add result] |
 
 The MAE was trained with smaller dimensions, fewer encoder/decoder layers and fewer epochs so it fits on a single consumer GPU. Larger settings should give better reconstructions.
 
